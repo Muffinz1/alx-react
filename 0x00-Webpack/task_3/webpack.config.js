@@ -11,12 +11,12 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'public'),
-    clean: true // Clean the build folder before each build
+    path: path.resolve(__dirname, './public'),
+    clean: true 
   },
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'public'),
+      directory: path.resolve(__dirname, './public'),
     },
     port: 8564,
     open: true 
